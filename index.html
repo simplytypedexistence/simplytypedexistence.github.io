@@ -8,23 +8,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet"> -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <title>Simply Typed Existence</title>
   </head>
   <body>
-    <div class="top">
-      <div class="site-title">
-        <h1 class="text-3xl font-bold ">
-          Simply Typed Existence
-        </h1>
-      </div>
-      <div class="menu flex flex-row text-3xl font-mono">
-        
-      </div>
-    </div>
-    <div class="main-body">
+    <div class="backdrop container mx-auto px-32">
+      <!-- head -->
+      <div class="main">
+        <div class=""></div>
+        <div class="flex items-center justify-between mt-16">
+          <div class="font-mono">
+            <h1 class="text-5xl">
+              Simply Typed Existence
+            </h1>
+          </div>
+          <!-- <div class="flex justify-end-safe"> -->
+            <el-dropdown class="inline-block font-mono">
+              <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-5 py-3 text-sm font-semibold text-gray-900 shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-gray-50">
+                Menu
+                <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+                  <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                </svg>
+              </button>
+  
+              <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg outline-1 outline-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                <div class="py-1">
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Research Experience</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Contact</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Publications</a>
+                  <a href="#" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Blog</a>
+                  <!-- <form action="#" method="POST">
+                    <button type="submit" class="block w-full px-4 py-2 text-left text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">Sign out</button>
+                  </form> -->
+                </div>
+              </el-menu>
+            </el-dropdown>
+          <!-- </div> -->
+        </div>
 
-    </div>
-    <div class="bottom"></div>
+        <div class="flex items-center justify-evenly mt-16">
+          <div>
+            <img src="800px-JD-Nerdanel.jpg" alt="Nerdanel, Feanor's wife, courtesy of Jenny Dolfen." class="max-w-sm rounded-2xl object-cover">
+          </div>
+          <div class="intro">
+            <p class="text-base font-mono justify ml-32">
+              The girl with a thing for foundations of computer science :D <br><br>
+              Hi, my name is Parnian (Anna) Naderi. I am an up-and-coming PhD student of Computer Science at Vrije Universiteit Amsterdam, supervised by <a href="https://gleissen.github.com" class="underline">Prof. Klaus von Gleissenthall</a>. My research interest mainly lays in mathematical logic and its applications in computer science, particularly interpolation. Besides, I am fortunate to be advised by Prof. Dr. Lutz Schroeder, working on the uniform interpolation of coalgebraic modal logic.<br><br>
 
+              Before coming to the VuA, I was an MSc student of computer science at the Univerity of Tehran, advised by Dr. Majid Alizadeh for working on the implementation of the uniform interpolation property of substructural logics in Rocq proof assistant. I received my bachelor of science degree in the same major from Sharif University of Technology.
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <!-- footer -->
+      <div class="footer"></div>
+    </div>
   </body>
 </html>

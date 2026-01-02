@@ -11,8 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <title>Simply Typed Existence</title>
   </head>
-  <body>
-  <div class="backdrop mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 xl:px-16">
+  <body class="opacity-0 translate-y-4 transition-opacity transition-discrete duration-1000 ease-out delay-100">
+    <div class="backdrop mx-auto max-w-6xl px-6 sm:px-8 lg:px-12 xl:px-16">
       <!-- head -->
       <div class="main">
         <div class=""></div>
@@ -144,5 +144,12 @@
         ©2026 Parnian Naderi
       </div>
     </div>
+    <script>
+      window.addEventListener('load', () => {
+        requestAnimationFrame(() => {
+          document.body.classList.remove('opacity-0','translate-y-4');
+        });
+      });
+    </script>
   </body>
 </html>
